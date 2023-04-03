@@ -5,7 +5,7 @@ const withMDX = require("@next/mdx")({
 /** @type {import('next').NextConfig} */
 module.exports = withMDX({
 	reactStrictMode: true,
-	pageExtensions: ["js", "jsx", "mdx"],
+	pageExtensions: ["ts", "tsx", "mdx"],
 	basePath: "/blog",
 	assetPrefix: "/blog",
 });
