@@ -18,8 +18,11 @@ jobs:
         uses: actions/setup-node@v3
 
       - run: npm install
+
+      - name: Set NODE_ENV to production
+        run: echo "NODE_ENV=production" >> "$GITHUB_OUTPUT"
+
       - run: npm run build
-      - run: npm run export
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
