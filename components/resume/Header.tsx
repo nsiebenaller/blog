@@ -26,8 +26,7 @@ const Header = () => {
 					>{`Hello, `}</span>
 					{`I'm Nicholas Siebenaller`}
 				</h2>
-				<h1 className="text-4xl uppercase">{`Full Stack Developer`}</h1>
-				<h3 className="font-extralight">{`Creative Problem-Solving Software Engineer`}</h3>
+				<h1 className="text-4xl uppercase">{`Software Engineer`}</h1>
 			</section>
 			<section className="grid justify-between font-extralight">
 				<div className="grid grid-cols-[max-content_1fr] gap-2 items-center">
