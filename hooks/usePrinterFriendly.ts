@@ -5,8 +5,8 @@ import { useRouter } from "next/router";
  * @returns {boolean} Whether the page is set as printer-friendly
  */
 const usePrinterFriendly = () => {
-	const router = useRouter();
-	return Boolean(router.query.print);
+  const router = useRouter();
+  return Boolean(router.query.print);
 };
 
 export default usePrinterFriendly;

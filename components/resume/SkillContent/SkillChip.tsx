@@ -1,19 +1,19 @@
 import React from "react";
 
 const SkillChip: React.FC<{ skill: string; printerFriendly: boolean }> = ({
-	skill,
-	printerFriendly,
+  skill,
+  printerFriendly,
 }) => {
-	return (
-		<span
-			className={`
+  return (
+    <span
+      className={`
 				${printerFriendly ? "border border-gray-300" : "bg-gray-200"}
-				text-gray-600 rounded-full px-2 py-0.5 text-xs m-1
+				m-1 rounded-full px-2 py-0.5 text-xs text-gray-600
 			`}
-		>
-			{skill}
-		</span>
-	);
+    >
+      {skill}
+    </span>
+  );
 };
 
 export default SkillChip;

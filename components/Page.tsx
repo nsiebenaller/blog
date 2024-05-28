@@ -1,17 +1,21 @@
 import React from "react";
 import usePrinterFriendly from "@/hooks/usePrinterFriendly";
+import clsx from "clsx";
 
 const Page: React.FC<{ children?: React.ReactNode }> = ({ children }) => {
-	const printerFriendly = usePrinterFriendly();
-	return (
-		<div
-			className={`relative font-sans 
-				${printerFriendly ? "w-A4 h-A4 overflow-hidden" : ""}
-			`}
-		>
-			{children}
-		</div>
-	);
+  const printerFriendly = usePrinterFriendly();
+  return (
+    <div className="flex justify-center">
+      <div
+        className={clsx(
+          "relative h-A4 w-A4 border border-gray-300 font-sans",
+          !printerFriendly && "shadow-lg",
+        )}
+      >
+        {children}
+      </div>
+    </div>
+  );
 };
 
 export default Page;

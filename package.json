@@ -1,35 +1,35 @@
 {
-	"name": "blog",
-	"version": "0.1.0",
-	"private": true,
-	"scripts": {
-		"dev": "next dev",
-		"build": "next build && touch ./out/.nojekyll",
-		"start": "next start",
-		"lint": "next lint"
-	},
-	"dependencies": {
-		"@mdx-js/loader": "^3.0.1",
-		"@mdx-js/react": "^3.0.1",
-		"@next/mdx": "^14.2.3",
-		"@types/node": "20.12.12",
-		"@types/react": "18.3.3",
-		"@types/react-dom": "18.3.0",
-		"autoprefixer": "^10.4.19",
-		"clsx": "^2.1.1",
-		"eslint": "8.56.0",
-		"eslint-config-next": "14.2.3",
-		"gray-matter": "^4.0.3",
-		"material-icons": "^1.13.12",
-		"next": "14.2.3",
-		"postcss": "^8.4.38",
-		"react": "18.3.1",
-		"react-dom": "18.3.1",
-		"tailwindcss": "^3.4.3",
-		"typescript": "5.4.5"
-	},
-	"devDependencies": {
-		"prettier": "^3.2.5",
-		"prettier-plugin-tailwindcss": "^0.5.14"
-	}
+  "name": "blog",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && touch ./out/.nojekyll",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@mdx-js/loader": "^3.0.1",
+    "@mdx-js/react": "^3.0.1",
+    "@next/mdx": "^14.2.3",
+    "@types/node": "20.12.12",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "autoprefixer": "^10.4.19",
+    "clsx": "^2.1.1",
+    "eslint": "8.56.0",
+    "eslint-config-next": "14.2.3",
+    "gray-matter": "^4.0.3",
+    "material-icons": "^1.13.12",
+    "next": "14.2.3",
+    "postcss": "^8.4.38",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "tailwindcss": "^3.4.3",
+    "typescript": "5.4.5"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.14"
+  }
 }
