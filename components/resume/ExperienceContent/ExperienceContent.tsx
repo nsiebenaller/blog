@@ -18,7 +18,7 @@ const ExperienceContent = () => {
             "Architect, plan and execute strategic direction of Agrograph product suite",
             "Review code contributions from frontend, backend, and data science teams",
             "Streamline continuous integration pipeline to increase speed and reliability of deployments",
-            "Plan and develop geospatial services pipeline using pub/sub and remote sensing",
+            "Plan and develop geospatial ETL pipelines using pub/sub and remote sensing",
           ]}
           printerFriendly={printerFriendly}
         />
@@ -29,7 +29,7 @@ const ExperienceContent = () => {
           to="Sep 2022"
           details={[
             "Collaborated with the Telnyx marketing team and other engineers on continually improving the brand's web presence (SEO, AdWords)",
-            "Facilitated the successful launch of several marketing and product sites",
+            "Facilitated the successful launches of marketing and product sites",
             "Created interactive web components, layouts, and landing pages with the latest web technologies (React, Next.js)",
             "Worked with a headless CMS to provide a flexible content management experience for the marketing team",
           ]}
@@ -41,10 +41,10 @@ const ExperienceContent = () => {
           from="Nov 2018"
           to="Mar 2021"
           details={[
-            "Migrated 10 year-old medical grants web application to the AWS gov cloud",
+            "Migrated 10-year-old medical grants web application to the AWS gov cloud",
             "Integrated React into existing system to improve performance, reusability, and user-experience",
             "Migrated databases from Oracle to PostgreSQL",
-            "Optimized accessability and performance of application in several key areas, such as, page load, asset & JS compression, and content size",
+            "Optimized accessibility and performance of application in several key areas, such as, page load, asset & JS compression, and content size",
             "Developed cohesive REST API platform to abide by speed and content guidelines",
           ]}
           printerFriendly={printerFriendly}
