@@ -1,6 +1,6 @@
 import React from "react";
-import Skill from "./Skill";
 import usePrinterFriendly from "@/hooks/usePrinterFriendly";
+import Skills from "./Skills";
 
 const SkillContent = () => {
   const printerFriendly = usePrinterFriendly();
@@ -12,40 +12,20 @@ const SkillContent = () => {
 					${printerFriendly ? "border border-gray-300" : "shadow-md"}
 				`}
       >
-        <Skill
-          name="Typescript"
-          skills={["Next", "React", "Express", "Fastify", "Prisma"]}
-          printerFriendly={printerFriendly}
-        />
-        <Skill
-          name="Rust"
-          skills={["Actix", "sqlx"]}
-          printerFriendly={printerFriendly}
-        />
-        <Skill
-          name="Java"
-          skills={["Spring", "Maven"]}
-          printerFriendly={printerFriendly}
-        />
-        <Skill
-          name="Golang"
-          skills={["Gin", "gorm"]}
-          printerFriendly={printerFriendly}
-        />
-        <Skill
-          name="Python"
-          skills={["GDAL", "pandas"]}
-          printerFriendly={printerFriendly}
-        />
-        <Skill
-          name="Databases"
-          skills={["PostgreSQL", "Oracle"]}
-          printerFriendly={printerFriendly}
-        />
-        <Skill
-          name="Cloud"
-          skills={["AWS", "GCP"]}
-          printerFriendly={printerFriendly}
+        <Skills
+          skills={[
+            "Typescript",
+            "React",
+            "Rust",
+            "Go",
+            "Java",
+            "Python",
+            "PostgreSQL",
+            "Oracle",
+            "AWS",
+            "GCP",
+            "Project Management",
+          ]}
         />
       </div>
     </section>

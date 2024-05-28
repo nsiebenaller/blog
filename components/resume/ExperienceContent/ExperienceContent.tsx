@@ -6,7 +6,7 @@ const ExperienceContent = () => {
   const printerFriendly = usePrinterFriendly();
   return (
     <section>
-      <h1 className="mb-2 text-2xl font-light">Recent Experience</h1>
+      <h1 className="mb-2 text-2xl font-light">Experience</h1>
       <div className="space-y-4">
         <Experience
           name="Engineering Lead"
@@ -43,7 +43,6 @@ const ExperienceContent = () => {
           details={[
             "Migrated 10-year-old medical grants web application to the AWS gov cloud",
             "Integrated React into existing system to improve performance, reusability, and user-experience",
-            "Migrated databases from Oracle to PostgreSQL",
             "Optimized accessibility and performance of application in several key areas, such as, page load, asset & JS compression, and content size",
             "Developed cohesive REST API platform to abide by speed and content guidelines",
           ]}

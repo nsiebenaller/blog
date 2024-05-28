@@ -8,7 +8,7 @@ const Page: React.FC<{ children?: React.ReactNode }> = ({ children }) => {
     <div className="flex justify-center">
       <div
         className={clsx(
-          "relative h-A4 w-A4 border border-gray-300 font-sans",
+          "relative h-A4 w-A4 overflow-hidden border border-gray-300 font-sans",
           !printerFriendly && "shadow-lg",
         )}
       >

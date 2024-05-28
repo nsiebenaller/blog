@@ -11,28 +11,30 @@ import usePrinterFriendly from "@/hooks/usePrinterFriendly";
 const ResumePage = () => {
   const printerFriendly = usePrinterFriendly();
   return (
-    <Page>
-      <Header />
-      <Content>
-        <div className="flex flex-col gap-5">
+    <>
+      <Page>
+        <Header />
+        <Content>
           <SkillContent />
-          <CertificationContent />
-          <EducationContent />
-        </div>
-        <div>
           <ExperienceContent />
-          {!printerFriendly && (
-            <a
-              href="/blog/resume.pdf"
-              download
-              className="mt-4 block rounded-full bg-blue-500 p-2 px-6 text-center text-white shadow-sm transition hover:bg-blue-400"
-            >
-              Download
-            </a>
-          )}
+          <div className="grid grid-cols-2 gap-4">
+            <CertificationContent />
+            <EducationContent />
+          </div>
+        </Content>
+      </Page>
+      {!printerFriendly && (
+        <div className="absolute right-10 top-5 drop-shadow-lg">
+          <a
+            href="/blog/resume.pdf"
+            download
+            className="mt-4 block rounded-full bg-blue-500 p-2 px-6 text-center text-white shadow-sm transition hover:bg-blue-400"
+          >
+            Download PDF
+          </a>
         </div>
-      </Content>
-    </Page>
+      )}
+    </>
   );
 };
 

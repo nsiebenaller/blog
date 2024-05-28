@@ -6,7 +6,7 @@ const Content: React.FC<{ children?: React.ReactNode }> = ({ children }) => {
   return (
     <section
       className={`
-				relative z-0 grid h-full w-full auto-rows-min grid-cols-2 
+				relative z-0 grid h-full w-full auto-rows-min
 				gap-4 px-8 py-4 ${printerFriendly ? "white" : "bg-gray-200"}
 			`}
     >

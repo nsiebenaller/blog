@@ -25,7 +25,7 @@ const Experience: React.FC<{
       <h4 className="text-sm font-light">{employer}</h4>
       <ul className="ml-6 list-disc space-y-1">
         {details.map((detail) => (
-          <li key={detail} className="text-xs text-gray-500">
+          <li key={detail} className="text-xs text-gray-700">
             {detail}
           </li>
         ))}

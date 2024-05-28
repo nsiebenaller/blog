@@ -31,15 +31,18 @@ const Header = () => {
       <section className="grid justify-between font-extralight">
         <div className="grid grid-cols-[max-content_1fr] items-center gap-2">
           <span className="material-icons-outlined text-sm">call</span>
-          {`(262) 391 - 2072`}
+          <span className="text-xs">{`(262) 391 - 2072`}</span>
         </div>
         <div className="grid grid-cols-[max-content_1fr] items-center gap-2">
           <span className="material-icons-outlined text-sm">email</span>
-          {`nicholaspaulsiebenaller@gmail.com`}
+          <span className="text-xs">{`nicholaspaulsiebenaller@gmail.com`}</span>
         </div>
         <div className="grid grid-cols-[max-content_1fr] items-center gap-2">
           <span className="material-icons-outlined text-sm">person</span>
-          <a href="https://linkedin.com/in/nsiebenaller">{`linkedin.com/in/nsiebenaller`}</a>
+          <a
+            href="https://linkedin.com/in/nsiebenaller"
+            className="text-xs"
+          >{`linkedin.com/in/nsiebenaller`}</a>
         </div>
       </section>
     </header>

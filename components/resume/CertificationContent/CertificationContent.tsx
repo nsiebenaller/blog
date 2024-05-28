@@ -1,7 +1,5 @@
 import React from "react";
 import Certification from "./Certification";
-import awsLogo from "@/public/aws-certified-developer-associate.png";
-import eagleScoutLogo from "@/public/eagle-scout.png";
 import usePrinterFriendly from "@/hooks/usePrinterFriendly";
 
 const CertificationContent = () => {
@@ -9,20 +7,16 @@ const CertificationContent = () => {
   return (
     <section>
       <h1 className="mb-2 text-2xl font-light">Certifications</h1>
-      <div className="space-y-4">
+      <div
+        className={`flex flex-col gap-2 rounded bg-white p-4 ${printerFriendly ? "border border-gray-300" : "shadow-md"}`}
+      >
         <Certification
           name="AWS Certified Developer - Associate"
           organization="Amazon Web Services"
-          img={awsLogo}
-          imgAlt="AWS Developer Associate Logo"
-          printerFriendly={printerFriendly}
         />
         <Certification
           name="Eagle Scout"
           organization="Boy Scouts of America"
-          img={eagleScoutLogo}
-          imgAlt="Eagle Scout Logo"
-          printerFriendly={printerFriendly}
         />
       </div>
     </section>
