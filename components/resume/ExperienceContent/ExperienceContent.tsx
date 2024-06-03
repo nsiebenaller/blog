@@ -6,7 +6,7 @@ const ExperienceContent = () => {
   const printerFriendly = usePrinterFriendly();
   return (
     <section>
-      <h1 className="mb-2 text-2xl font-light">Experience</h1>
+      <h1 className="mb-2 text-2xl font-light">Recent Experience</h1>
       <div className="space-y-4">
         <Experience
           name="Engineering Lead"
