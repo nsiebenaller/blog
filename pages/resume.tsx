@@ -24,14 +24,16 @@ const ResumePage = () => {
         </Content>
       </Page>
       {!printerFriendly && (
-        <div className="absolute right-10 top-5 drop-shadow-lg">
-          <a
-            href="/blog/resume.pdf"
-            download
-            className="mt-4 block rounded-full bg-blue-500 p-2 px-6 text-center text-white shadow-sm transition hover:bg-blue-400"
-          >
-            Download PDF
-          </a>
+        <div className="absolute left-0 top-0 z-50 h-full w-full">
+          <div className="sticky left-6 top-8 inline-block drop-shadow-lg">
+            <a
+              href="/blog/resume.pdf"
+              download
+              className="mt-4 inline-block rounded-full bg-blue-500 p-2 px-6 text-center text-white shadow-sm transition hover:bg-blue-400"
+            >
+              Download PDF
+            </a>
+          </div>
         </div>
       )}
     </>

@@ -1,19 +1,18 @@
 import React from "react";
 
-const Experience: React.FC<{
+const ExperienceSlim: React.FC<{
   name: string;
   employer: string;
   from: string;
   to: string;
-  details: string[];
   printerFriendly: boolean;
-}> = ({ name, employer, from, to, details, printerFriendly }) => {
+}> = ({ name, employer, from, to, printerFriendly }) => {
   return (
     <div
       className={`
-				space-y-2 rounded bg-white p-4
-				${printerFriendly ? "border border-gray-300" : "shadow-md"}
-			`}
+		space-y-2 rounded bg-white p-4
+		${printerFriendly ? "border border-gray-300" : "shadow-md"}
+	`}
     >
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
@@ -27,16 +26,8 @@ const Experience: React.FC<{
           {from} - {to}
         </p>
       </div>
-
-      <ul className="ml-6 list-disc space-y-1">
-        {details.map((detail) => (
-          <li key={detail} className="text-xs text-gray-700">
-            {detail}
-          </li>
-        ))}
-      </ul>
     </div>
   );
 };
 
-export default Experience;
+export default ExperienceSlim;
